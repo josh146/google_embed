@@ -83,8 +83,7 @@ def content_object_init(instance):
                   width="{3}"
                   height="{4}"
                   frameborder="0" style="border:0;{6}"
-                  src="https://www.google.com/maps/embed/v1/{0}?key={1}
-                    &q={2}&maptype={5}">
+                  src="https://www.google.com/maps/embed/v1/{0}?key={1}&q={2}&maptype={5}">
                 </iframe>
                 """.format(mode,GMAPS_KEY,location,width,height,maptype,alignCSS)
 
@@ -165,8 +164,7 @@ def content_object_init(instance):
                       width="{1}"
                       height="{2}"
                       frameborder="0" style="border:0;{8}"
-                      src="https://www.google.com/maps/embed/v1/directions?key={0}
-                        &origin={4}&destination={5}&waypoints={6}&maptype={3}&mode={7}">
+                      src="https://www.google.com/maps/embed/v1/directions?key={0}&origin={4}&destination={5}&waypoints={6}&maptype={3}&mode={7}">
                     </iframe>
                     """.format(GMAPS_KEY,width,height,maptype,origin,destination,waypoints,mode,alignCSS)
             else:
@@ -175,8 +173,7 @@ def content_object_init(instance):
                       width="{1}"
                       height="{2}"
                       frameborder="0" style="border:0;{7}"
-                      src="https://www.google.com/maps/embed/v1/directions?key={0}
-                        &origin={4}&destination={5}&maptype={3}&mode={6}">
+                      src="https://www.google.com/maps/embed/v1/directions?key={0}&origin={4}&destination={5}&maptype={3}&mode={6}">
                     </iframe>
                     """.format(GMAPS_KEY,width,height,maptype,origin,destination,mode,alignCSS)
 
@@ -237,13 +234,7 @@ def content_object_init(instance):
 
             linkHTML = """
                 <img border=0
-                  src="http://maps.googleapis.com/maps/api/staticmap
-                    ?center={0}
-                    &zoom={1}
-                    &size={2}x{3}
-                    &sensor=false
-                    &maptype={4}
-                    &API={5}{6}"
+                  src="http://maps.googleapis.com/maps/api/staticmap?center={0}&zoom={1}&size={2}x{3}&sensor=false&maptype={4}&API={5}{6}"
                   alt="{0}"
                   style="{7}"/>
             """.format(center, zoom, width, height, maptype, GMAPS_KEY, markers, alignCSS)
