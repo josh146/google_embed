@@ -289,9 +289,7 @@ def content_object_init(instance):
 
             linkHTML = """
                 <img border=0
-                  src="http://maps.googleapis.com/maps/api/streetview?location={0}
-                    &size={1}x{2}&sensor=false
-                    &API={3}"
+                  src="http://maps.googleapis.com/maps/api/streetview?location={0}&size={1}x{2}&sensor=false&API={3}"
                   alt="{0}"
                   style="{4}"/>
             """.format(location, width, height, GMAPS_KEY, alignCSS)
