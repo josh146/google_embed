@@ -4,6 +4,8 @@ Google-Embed
 Google-Embed is a Pelican_ plugin providing restucturedText directives to allow
 easy embedding of Google+ (for example a public post or album) and Google Maps.
 
+`Live examples <http://iza.ac/posts/2014/03/google-embed/>`_ can also be viewed from a Pelican-built website.
+
 .. _Pelican: http://getpelican.com
 
 
